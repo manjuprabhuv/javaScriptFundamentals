@@ -23,10 +23,10 @@ console.log(`Simple count ${simpleCounter.get()}`)
 const count = function (){    
     let count = 0;  
     return {
-      increment : function () {count +=1},
-      get : function () { return count}
+      increment : () => count +=1,
+      get : () => count
     }
-}()
+}() 
 console.log(`counter ${count.get()}`)
 count.increment()
 console.log(`counter ${count.get()}`)
