@@ -1,4 +1,4 @@
-# javaScriptFundamentals
+# JavaScriptFundamentals
 JavaScript Fundamentals Exercises
 
 Files which contain demostrats the basics of Javscript. 
