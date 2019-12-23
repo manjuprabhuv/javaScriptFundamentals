@@ -12,12 +12,12 @@ function counter(){
     get
   };
 }
-const simpleCounter = counter()
-console.log(`Simple count ${simpleCounter.get()}`)
-simpleCounter.increment()
-console.log(`Simple count ${simpleCounter.get()}`)
-simpleCounter.increment()
-console.log(`Simple count ${simpleCounter.get()}`)
+const simpleCounter = counter();
+console.log(`Simple count ${simpleCounter.get()}`);
+simpleCounter.increment();
+console.log(`Simple count ${simpleCounter.get()}`);
+simpleCounter.increment();
+console.log(`Simple count ${simpleCounter.get()}`);
 
 // With an iife- Immediately invoked function execution
 const count = function (){    
@@ -26,9 +26,9 @@ const count = function (){
       increment : () => count +=1,
       get : () => count
     }
-}() 
-console.log(`counter ${count.get()}`)
-count.increment()
-console.log(`counter ${count.get()}`)
-count.increment()
-console.log(`counter ${count.get()}`) 
+}();
+console.log(`counter ${count.get()}`);
+count.increment();
+console.log(`counter ${count.get()}`);
+count.increment();
+console.log(`counter ${count.get()}`);
