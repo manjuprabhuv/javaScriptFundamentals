@@ -26,6 +26,16 @@ Array.prototype.myReduce = function(callback){
     }
     return collector
 };
+Array.prototype.myFilter = function(callback){
+    const result = [];
+    for(let index = 0; index<this.length; index++){
+        if(callback(this[index], index, this)){
+            result.push(this[index])
+        }
+        
+    }
+    return result
+}
 console.log(myIntArray.mymap((element)=>{
     return element+1
 }));
@@ -45,3 +55,4 @@ myStrArray.myForEach((element) => {
 console.log(myStrArray.myReduce((a,b)=>{
     return a+b
 }));
+console.log(myStrArray.myFilter((x)=>x!='a'))
